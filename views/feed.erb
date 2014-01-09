@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hashtagram Miller</title>
+<script src="/js/jquery.js"></script>
+<script src="/js/feed.js"></script>
+</head>
+
+<body>
+	<h1>Usuario instagram: <%= username %> - <%= instagram_id %> Ultimo id: <%= last_id %></h1>
+	<a href="/feed">Buscar más</a><br>
+	Se actualizó: <%= new_posts.count %>
+	<table border="0" cellspacing="5" cellpadding="5">
+		<tr>
+			<th>Foto</th>
+			<th>Texto</th>
+			<th>Usuario</th>
+			<th>Acción</th>
+		</tr>
+		<% new_posts.each do |item|%>
+		<tr id="<%= item.id %>">
+			<td><img style="width: 70px;height: 70px" src="<%= server + "/uploads/" + Pathname.new(item.images.standard_resolution.url).basename.to_s%>" alt="testo"></td>
+			<td><%= item.caption.text %></td>
+			<td><%= item.user.username %></td>
+			<td><a class="aprobar" href="#">Aprobar</a></td>
+		</tr>
+		<% end %>
+	</table>
+</body>
+</html>

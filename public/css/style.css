@@ -1,0 +1,116 @@
+/*
+Theme Name: Miller Hashtagram
+Theme URI: http://olm.puntopy.com/miller/hashtagram/
+Author: Adri&aacute;n C&eacute;spedes [Para Brandplay/Social Cherry]
+Version: 1.0
+Description: Disen&ntilde;o del sitio por Alex Ayala
+
+
+Creado: Junio de 2012
+Tipo: Hot Site para activacion
+
+*/
+
+/*------- Resets ----------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, video, object {
+	display: block;
+}
+
+a img {border: 0;}
+figure {position: relative;}
+
+
+/*------@font-face------*/
+
+@font-face {
+    font-family: 'GoodOTBlack';
+    src: url('fonts/GoodOT-WideBlack.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GoodOTMedium';
+    src: url('fonts/GoodOT-WideMedium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+@import url('css/reset.css');
+@import url('css/960.css');
+*/
+
+/*-------------
+ Clases Globlaes 
+---------------*/
+.clear{
+	clear: both;
+	}
+.right{
+	float:right;
+	}
+.left{
+	float:left;
+	}
+.center{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	}
+/*-------------
+Sitio en Gral
+---------------*/
+html{
+	font-family:GoodOTMedium;
+	background:#000;
+	color: #fff;
+	text-transform:uppercase;
+	}
+.logo{
+	margin-top: 40px;
+	}
+
+.claim{
+	width: 590px;
+	font-size: 32px;
+	}
+	
+/*-------------
+Hash Stuff
+---------------*/
+.hash{
+	}
+.hash_image{
+	border: 15px solid #fff;;
+	width: 90%;
+	}
+.hash_info{
+	width: 950px;
+	font-family: GoodOTBlack;
+	text-align:left !important;
+	margin-top:40px;
+	margin-bottom: 40px;
+	}
+.hash_texto{
+	height: 120px;
+	min-height: 60px;
+	width: 950px;
+	}
+.hash_user, .hash_user a{
+	color: #c0a458;
+	text-decoration:none;
+	text-align: left;
+	font-size: 60px;
+	}

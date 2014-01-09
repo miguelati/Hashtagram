@@ -1,0 +1,5 @@
+<% if !post.nil? %>
+ChangeInfo("<%= post[:comment][0,70]%>");
+ChangeImage("<%= server %>/uploads/<%= post[:image_name]%>");
+ChangeUser("<%= post[:username]%>");
+<% end %>
